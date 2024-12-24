@@ -8,10 +8,10 @@ html,body{
     display: flex;
     align-items: center;/* Column Wise Center  */
     justify-content: center; /* Row Wise Center */
-    background-color: antiquewhite;
+    background-color: #a2d2ff;
 }
 .qr-container{
-    background-color: white;
+    background-color: #bde0fe;
     border-radius: 10px;
     width: 30rem;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
