@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    display: flex;
+    align-items: center;/* Column Wise Center  */
+    justify-content: center; /* Row Wise Center */
+    background-color: antiquewhite;
+}
+.qr-container{
+    background-color: white;
+    border-radius: 10px;
+    width: 30rem;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    padding: 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+   
+}
+.qr-container h2{
+    text-align: center;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+.qr-container #qr-input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid black;
+}
+.qr-container #qr-button{
+    width: 100%;
+    padding: 10px;
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.qr-container #qr-button:active{
+    scale: 0.8;
+    background-color: purple;
+
+}
+.qr-container #qr-image{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    background-color: red;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+}
+#btn{
+    display: none;
+}
+@media (max-width: 550px) {
+    .qr-container{
+        background-color: white;
+        border-radius: 10px;
+        width: 80vw;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+        padding: 20px;
+    }
+    .qr-container #qr-button{
+        width: 100%;
+        padding: 10px;
+        background-color: #2ecc71;
+        border: none;
+        color: white;
+        font-size: 4.5vw;
+        margin: 10px 0;
+    }
+    
+    
+}
+@media (max-width: 410px) {
+
+    .qr-container #qr-button{
+        width: 100%;
+        padding: 10px;
+        background-color: #2ecc71;
+        border: none;
+        color: white;
+        font-size: 4vw;
+        margin: 10px 0;
+    }
+    .qr-container #qr-image{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    
+    
+}
+@media (max-width: 300px) {
+    .qr-container #qr-button{
+        font-size: 3.5vw;
+    }
+    .qr-container #qr-image{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    
+}
